@@ -7,7 +7,7 @@ import { FlatList } from 'react-native';
 import { ListEmpty } from '@components/ListEmpty';
 
 export function Groups() {
-  const [groups, setGroups] = useState([]);
+  const [groups, setGroups] = useState<string[]>([]);
 
   return (
     <Container>
@@ -22,7 +22,9 @@ export function Groups() {
             title={item}
           />
         )}
-        ListEmptyComponent={() => (<ListEmpty key={1} message='teste'/>)}
+        ListEmptyComponent={() => (
+          <ListEmpty message="Que tal cadastrar a primeira turma?" />
+        )}
       />
     </Container>
   );

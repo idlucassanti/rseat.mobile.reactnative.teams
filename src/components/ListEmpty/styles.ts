@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  flex: 1; //ocupar tudo que estiver disponível de espaço
+  flex: 1; /*ocupar tudo que estiver disponível de espaço*/
   justify-content: center;
   align-items: center;
 `;
