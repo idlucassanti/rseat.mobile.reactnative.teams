@@ -5,7 +5,6 @@ import { ButtonIcon } from "@components/ButtonIcon";
 import { Input } from "@components/Input";
 import { Filter } from "./components/Filter";
 import { FlatList } from "react-native";
-import { ListEmpty } from "@components/ListEmpty";
 import { useState } from "react";
 
 export function Players() {
@@ -34,9 +33,6 @@ export function Players() {
             />
           )}
           horizontal
-          ListEmptyComponent={() => (
-            <ListEmpty message="Que tal adicionar o primeiro participante?" />
-          )}
         />
 
         <NumbersOfPlayers>
